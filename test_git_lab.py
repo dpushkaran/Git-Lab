@@ -4,6 +4,7 @@ from git_lab import (
     celsius_to_fahrenheit,
     is_palindrome,
     calculate_triangle_area,
+    multiply_numbers,
     test_func,
     is_prime,
     add_numbers,
@@ -38,6 +39,10 @@ class TestUtils(unittest.TestCase):
             calculate_triangle_area(-1, 2)
         with self.assertRaises(ValueError):
             calculate_triangle_area(2, -1)
+
+    def test_multiply_numbers(self):
+        self.assertEqual(multiply_numbers(2, 3), 6)
+        self.assertEqual(multiply_numbers(-1, 1), -1)
 
     def test_test__func(self):
         self.assertEqual(test_func(3, 4), 6.0)

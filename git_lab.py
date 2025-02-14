@@ -54,6 +54,10 @@ def test_func(base, height):
         raise ValueError("Base and height cannot be negative")
     return 0.5 * base * height
 
+def multiply_numbers(a, b):
+    """Returns the product of two numbers."""
+    return a * b
+
 
 def is_prime(n):
     """
