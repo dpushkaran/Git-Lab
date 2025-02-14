@@ -42,6 +42,18 @@ def calculate_triangle_area(base, height):
         raise ValueError("Base and height cannot be negative")
     return 0.5 * base * height
 
+def test_func(base, height):
+    """
+    Calculate the area of a triangle given its base and height.
+    
+    :param base: float, the base of the triangle
+    :param height: float, the height of the triangle
+    :return: float, the area of the triangle
+    """
+    if base < 0 or height < 0:
+        raise ValueError("Base and height cannot be negative")
+    return 0.5 * base * height
+
 def is_prime(n):
     """
     Check if a number is a prime number.
